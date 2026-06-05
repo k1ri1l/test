@@ -24,7 +24,7 @@
 #include "tim.h"
 #include "usart.h"//Подключение юарта
 #include "usb_host.h"
-#include "gpio.h"
+#include "gpio.h"//подключение gpio
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
