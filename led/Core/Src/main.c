@@ -124,7 +124,7 @@ uint32_t val = HAL_ADC_GetValue(&hadc1);
 HAL_ADC_Stop(&hadc1);
 
 char buf[20];
-sprintf(buf, "Light: %lu", val);
+
 
 ssd1306_Fill(Black);
 ssd1306_SetCursor(0, 10);
