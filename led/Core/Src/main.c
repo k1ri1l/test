@@ -22,7 +22,7 @@
 #include "i2c.h"
 #include "i2s.h"
 #include "tim.h"
-#include "usart.h"
+#include "usart.h"//Подключение юарта
 #include "usb_host.h"
 #include "gpio.h"
 
