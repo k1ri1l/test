@@ -114,7 +114,8 @@ int main(void)
  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
   /* USER CODE END 2 */
-
+int i;
+    int but = 1;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -123,29 +124,63 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
-    int i;
+    
+   
+    if(but > 4){
+      but = 1;
+    }
+   if(but == 1){
+    for(i = 0; i <= 500; i++){
+if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
+      but++;
+      HAL_Delay(300);
+      break;
+    }
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+    HAL_Delay(3);
+   }
+   for(i = 500; i >= 0; i--){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+    HAL_Delay(3);
+   }
+   }
+   else if(but == 2){
    for(i = 0; i <= 500; i++){
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
-    HAL_Delay(3);
-   }
-   for(i = 500; i >= 0; i--){
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
-    HAL_Delay(3);
-   }for(i = 0; i <= 500; i++){
+    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
+      but++;
+      HAL_Delay(300);
+      break;
+    }
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, i);
     HAL_Delay(3);
    }
    for(i = 500; i >= 0; i--){
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, i);
     HAL_Delay(3);
-   }for(i = 0; i <= 500; i++){
+   }
+  }
+  else if(but == 3){
+   for(i = 0; i <= 500; i++){
+    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
+      but++;
+      HAL_Delay(300);
+      break;
+    }
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, i);
     HAL_Delay(3);
    }
    for(i = 500; i >= 0; i--){
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, i);
     HAL_Delay(3);
-   }for(i = 0; i <= 500; i++){
+   }
+  }
+  else if(but == 4){
+   for(i = 0; i <= 500; i++){
+    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
+      but++;
+      HAL_Delay(300);
+      break;
+    }
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, i);
     HAL_Delay(3);
    }
@@ -153,6 +188,7 @@ int main(void)
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, i);
     HAL_Delay(3);
    }
+  }
   }
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
