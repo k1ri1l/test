@@ -120,10 +120,14 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
-    
-   for(int i = 0; i <= 500; i++){
+    int i;
+   for(i = 0; i <= 500; i++){
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
-    HAL_Delay(20);
+    HAL_Delay(3);
+   }
+   for(i = 500; i >= 0; i--){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+    HAL_Delay(3);
    }
   }
     /* USER CODE END WHILE */
