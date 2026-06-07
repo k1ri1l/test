@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccKqjxPc.s 			page 1
+ARM GAS  /tmp/cc3mQcrT.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
   27:USB_HOST/Target/usbh_conf.c **** /* USER CODE END Includes */
   28:USB_HOST/Target/usbh_conf.c **** 
   29:USB_HOST/Target/usbh_conf.c **** /* Private typedef -----------------------------------------------------------*/
-ARM GAS  /tmp/ccKqjxPc.s 			page 2
+ARM GAS  /tmp/cc3mQcrT.s 			page 2
 
 
   30:USB_HOST/Target/usbh_conf.c **** /* Private define ------------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
   49 0006 0393     		str	r3, [sp, #12]
   50 0008 0493     		str	r3, [sp, #16]
   51 000a 0593     		str	r3, [sp, #20]
-ARM GAS  /tmp/ccKqjxPc.s 			page 3
+ARM GAS  /tmp/cc3mQcrT.s 			page 3
 
 
   52 000c 0693     		str	r3, [sp, #24]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
   70              	.L4:
   71              	.LCFI3:
   72              		.cfi_restore_state
-ARM GAS  /tmp/ccKqjxPc.s 			page 4
+ARM GAS  /tmp/cc3mQcrT.s 			page 4
 
 
   73              		.loc 1 100 1 view .LVU8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  112              		.loc 1 84 5 is_stmt 1 view .LVU23
   84:USB_HOST/Target/usbh_conf.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  113              		.loc 1 84 26 is_stmt 0 view .LVU24
-ARM GAS  /tmp/ccKqjxPc.s 			page 5
+ARM GAS  /tmp/cc3mQcrT.s 			page 5
 
 
  114 004e 0223     		movs	r3, #2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  152              		.loc 1 91 5 view .LVU40
   94:USB_HOST/Target/usbh_conf.c ****     HAL_NVIC_EnableIRQ(OTG_FS_IRQn);
  153              		.loc 1 94 5 view .LVU41
-ARM GAS  /tmp/ccKqjxPc.s 			page 6
+ARM GAS  /tmp/cc3mQcrT.s 			page 6
 
 
  154 007e 2A46     		mov	r2, r5
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  109:USB_HOST/Target/usbh_conf.c ****     /* Peripheral clock disable */
  110:USB_HOST/Target/usbh_conf.c ****     __HAL_RCC_USB_OTG_FS_CLK_DISABLE();
  111:USB_HOST/Target/usbh_conf.c **** 
-ARM GAS  /tmp/ccKqjxPc.s 			page 7
+ARM GAS  /tmp/cc3mQcrT.s 			page 7
 
 
  112:USB_HOST/Target/usbh_conf.c ****     /**USB_OTG_FS GPIO Configuration
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  236              		.thumb_func
  238              	HAL_HCD_SOF_Callback:
  239              	.LVL14:
-ARM GAS  /tmp/ccKqjxPc.s 			page 8
+ARM GAS  /tmp/cc3mQcrT.s 			page 8
 
 
  240              	.LFB244:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  278              	.LCFI6:
  279              		.cfi_def_cfa_offset 8
  280              		.cfi_offset 3, -8
-ARM GAS  /tmp/ccKqjxPc.s 			page 9
+ARM GAS  /tmp/cc3mQcrT.s 			page 9
 
 
  281              		.cfi_offset 14, -4
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  326              		.global	HAL_HCD_HC_NotifyURBChange_Callback
  327              		.syntax unified
  328              		.thumb
-ARM GAS  /tmp/ccKqjxPc.s 			page 10
+ARM GAS  /tmp/cc3mQcrT.s 			page 10
 
 
  329              		.thumb_func
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  180:USB_HOST/Target/usbh_conf.c ****   USBH_LL_PortEnabled(hhcd->pData);
  364              		.loc 1 180 3 is_stmt 1 view .LVU74
  365 0002 D0F8DC03 		ldr	r0, [r0, #988]
-ARM GAS  /tmp/ccKqjxPc.s 			page 11
+ARM GAS  /tmp/cc3mQcrT.s 			page 11
 
 
  366              	.LVL25:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  413              	USBH_LL_Init:
  414              	.LVL30:
  415              	.LFB250:
-ARM GAS  /tmp/ccKqjxPc.s 			page 12
+ARM GAS  /tmp/cc3mQcrT.s 			page 12
 
 
  192:USB_HOST/Target/usbh_conf.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  435 000c 10B5     		push	{r4, lr}
  436              	.LCFI10:
  437              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccKqjxPc.s 			page 13
+ARM GAS  /tmp/cc3mQcrT.s 			page 13
 
 
  438              		.cfi_offset 4, -8
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  216:USB_HOST/Target/usbh_conf.c ****   {
  474              		.loc 1 216 7 is_stmt 0 view .LVU108
  475 0032 FFF7FEFF 		bl	HAL_HCD_Init
-ARM GAS  /tmp/ccKqjxPc.s 			page 14
+ARM GAS  /tmp/cc3mQcrT.s 			page 14
 
 
  476              	.LVL34:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  237:USB_HOST/Target/usbh_conf.c ****   hal_status = HAL_HCD_DeInit(phost->pData);
  238:USB_HOST/Target/usbh_conf.c **** 
  239:USB_HOST/Target/usbh_conf.c ****   usb_status = USBH_Get_USB_Status(hal_status);
-ARM GAS  /tmp/ccKqjxPc.s 			page 15
+ARM GAS  /tmp/cc3mQcrT.s 			page 15
 
 
  240:USB_HOST/Target/usbh_conf.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  525              		.cfi_offset 14, -4
  285:USB_HOST/Target/usbh_conf.c ****   USBH_SpeedTypeDef speed = USBH_SPEED_FULL;
  526              		.loc 1 285 3 is_stmt 1 view .LVU117
-ARM GAS  /tmp/ccKqjxPc.s 			page 16
+ARM GAS  /tmp/cc3mQcrT.s 			page 16
 
 
  527              	.LVL40:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  559              		.section	.text.USBH_LL_GetLastXferSize,"ax",%progbits
  560              		.align	1
  561              		.global	USBH_LL_GetLastXferSize
-ARM GAS  /tmp/ccKqjxPc.s 			page 17
+ARM GAS  /tmp/cc3mQcrT.s 			page 17
 
 
  562              		.syntax unified
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  589              	.LFE256:
  591              		.section	.text.USBH_LL_ClosePipe,"ax",%progbits
  592              		.align	1
-ARM GAS  /tmp/ccKqjxPc.s 			page 18
+ARM GAS  /tmp/cc3mQcrT.s 			page 18
 
 
  593              		.global	USBH_LL_ClosePipe
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  376:USB_HOST/Target/usbh_conf.c ****   UNUSED(pipe);
  607              		.loc 1 376 3 view .LVU135
  377:USB_HOST/Target/usbh_conf.c **** 
-ARM GAS  /tmp/ccKqjxPc.s 			page 19
+ARM GAS  /tmp/cc3mQcrT.s 			page 19
 
 
  378:USB_HOST/Target/usbh_conf.c ****   return USBH_OK;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  647              		.thumb
  648              		.thumb_func
  650              	USBH_LL_GetURBState:
-ARM GAS  /tmp/ccKqjxPc.s 			page 20
+ARM GAS  /tmp/cc3mQcrT.s 			page 20
 
 
  651              	.LVL51:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  448:USB_HOST/Target/usbh_conf.c ****   *            @arg URB_NOTREADY
  449:USB_HOST/Target/usbh_conf.c ****   *            @arg URB_NYET
  450:USB_HOST/Target/usbh_conf.c ****   *            @arg URB_ERROR
-ARM GAS  /tmp/ccKqjxPc.s 			page 21
+ARM GAS  /tmp/cc3mQcrT.s 			page 21
 
 
  451:USB_HOST/Target/usbh_conf.c ****   *            @arg URB_STALL
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  691              	.LCFI14:
  692              		.cfi_def_cfa_offset 8
  693              		.cfi_offset 3, -8
-ARM GAS  /tmp/ccKqjxPc.s 			page 22
+ARM GAS  /tmp/cc3mQcrT.s 			page 22
 
 
  694              		.cfi_offset 14, -4
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  482:USB_HOST/Target/usbh_conf.c ****   * @brief  Set toggle for a pipe.
  483:USB_HOST/Target/usbh_conf.c ****   * @param  phost: Host handle
  484:USB_HOST/Target/usbh_conf.c ****   * @param  pipe: Pipe index
-ARM GAS  /tmp/ccKqjxPc.s 			page 23
+ARM GAS  /tmp/cc3mQcrT.s 			page 23
 
 
  485:USB_HOST/Target/usbh_conf.c ****   * @param  toggle: toggle (0/1)
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  769              	.L52:
  499:USB_HOST/Target/usbh_conf.c ****   }
  770              		.loc 1 499 5 is_stmt 1 view .LVU176
-ARM GAS  /tmp/ccKqjxPc.s 			page 24
+ARM GAS  /tmp/cc3mQcrT.s 			page 24
 
 
  499:USB_HOST/Target/usbh_conf.c ****   }
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  809 0008 03EB8202 		add	r2, r3, r2, lsl #2
  810 000c D27D     		ldrb	r2, [r2, #23]	@ zero_extendqisi2
  811              		.loc 1 517 5 view .LVU188
-ARM GAS  /tmp/ccKqjxPc.s 			page 25
+ARM GAS  /tmp/cc3mQcrT.s 			page 25
 
 
  812 000e 32B1     		cbz	r2, .L55
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  533:USB_HOST/Target/usbh_conf.c **** void USBH_Delay(uint32_t Delay)
  534:USB_HOST/Target/usbh_conf.c **** {
  853              		.loc 1 534 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccKqjxPc.s 			page 26
+ARM GAS  /tmp/cc3mQcrT.s 			page 26
 
 
  854              		.cfi_startproc
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  548:USB_HOST/Target/usbh_conf.c ****   {
  549:USB_HOST/Target/usbh_conf.c ****     case HAL_OK :
  550:USB_HOST/Target/usbh_conf.c ****       usb_status = USBH_OK;
-ARM GAS  /tmp/ccKqjxPc.s 			page 27
+ARM GAS  /tmp/cc3mQcrT.s 			page 27
 
 
  551:USB_HOST/Target/usbh_conf.c ****     break;
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  933              	.LCFI16:
  934              		.cfi_def_cfa_offset 8
  935              		.cfi_offset 3, -8
-ARM GAS  /tmp/ccKqjxPc.s 			page 28
+ARM GAS  /tmp/cc3mQcrT.s 			page 28
 
 
  936              		.cfi_offset 14, -4
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  979              		.loc 1 252 3 view .LVU228
  254:USB_HOST/Target/usbh_conf.c **** 
  980              		.loc 1 254 3 view .LVU229
-ARM GAS  /tmp/ccKqjxPc.s 			page 29
+ARM GAS  /tmp/cc3mQcrT.s 			page 29
 
 
  254:USB_HOST/Target/usbh_conf.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  1024              		.loc 1 271 16 view .LVU242
  1025 0006 FFF7FEFF 		bl	HAL_HCD_Stop
  1026              	.LVL99:
-ARM GAS  /tmp/ccKqjxPc.s 			page 30
+ARM GAS  /tmp/cc3mQcrT.s 			page 30
 
 
  273:USB_HOST/Target/usbh_conf.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  1070              	.LVL105:
  322:USB_HOST/Target/usbh_conf.c **** }
  1071              		.loc 1 322 3 is_stmt 1 view .LVU256
-ARM GAS  /tmp/ccKqjxPc.s 			page 31
+ARM GAS  /tmp/cc3mQcrT.s 			page 31
 
 
  323:USB_HOST/Target/usbh_conf.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  1118 001e FFF7FEFF 		bl	USBH_Get_USB_Status
  1119              	.LVL110:
  363:USB_HOST/Target/usbh_conf.c **** }
-ARM GAS  /tmp/ccKqjxPc.s 			page 32
+ARM GAS  /tmp/cc3mQcrT.s 			page 32
 
 
  1120              		.loc 1 363 3 is_stmt 1 view .LVU267
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  1167 0016 0194     		str	r4, [sp, #4]
  1168 0018 9DF81840 		ldrb	r4, [sp, #24]	@ zero_extendqisi2
  1169 001c 0094     		str	r4, [sp]
-ARM GAS  /tmp/ccKqjxPc.s 			page 33
+ARM GAS  /tmp/cc3mQcrT.s 			page 33
 
 
  1170 001e FFF7FEFF 		bl	HAL_HCD_HC_SubmitRequest
@@ -1966,72 +1966,72 @@ ARM GAS  /tmp/ccKqjxPc.s 			page 1
  1206              		.file 12 "USB_HOST/Target/usbh_platform.h"
  1207              		.file 13 "Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h"
  1208              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
-ARM GAS  /tmp/ccKqjxPc.s 			page 34
+ARM GAS  /tmp/cc3mQcrT.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbh_conf.c
-     /tmp/ccKqjxPc.s:21     .text.HAL_HCD_MspInit:00000000 $t
-     /tmp/ccKqjxPc.s:27     .text.HAL_HCD_MspInit:00000000 HAL_HCD_MspInit
-     /tmp/ccKqjxPc.s:168    .text.HAL_HCD_MspInit:00000090 $d
-     /tmp/ccKqjxPc.s:174    .text.HAL_HCD_MspDeInit:00000000 $t
-     /tmp/ccKqjxPc.s:180    .text.HAL_HCD_MspDeInit:00000000 HAL_HCD_MspDeInit
-     /tmp/ccKqjxPc.s:226    .text.HAL_HCD_MspDeInit:00000028 $d
-     /tmp/ccKqjxPc.s:232    .text.HAL_HCD_SOF_Callback:00000000 $t
-     /tmp/ccKqjxPc.s:238    .text.HAL_HCD_SOF_Callback:00000000 HAL_HCD_SOF_Callback
-     /tmp/ccKqjxPc.s:263    .text.HAL_HCD_Connect_Callback:00000000 $t
-     /tmp/ccKqjxPc.s:269    .text.HAL_HCD_Connect_Callback:00000000 HAL_HCD_Connect_Callback
-     /tmp/ccKqjxPc.s:294    .text.HAL_HCD_Disconnect_Callback:00000000 $t
-     /tmp/ccKqjxPc.s:300    .text.HAL_HCD_Disconnect_Callback:00000000 HAL_HCD_Disconnect_Callback
-     /tmp/ccKqjxPc.s:325    .text.HAL_HCD_HC_NotifyURBChange_Callback:00000000 $t
-     /tmp/ccKqjxPc.s:331    .text.HAL_HCD_HC_NotifyURBChange_Callback:00000000 HAL_HCD_HC_NotifyURBChange_Callback
-     /tmp/ccKqjxPc.s:345    .text.HAL_HCD_PortEnabled_Callback:00000000 $t
-     /tmp/ccKqjxPc.s:351    .text.HAL_HCD_PortEnabled_Callback:00000000 HAL_HCD_PortEnabled_Callback
-     /tmp/ccKqjxPc.s:376    .text.HAL_HCD_PortDisabled_Callback:00000000 $t
-     /tmp/ccKqjxPc.s:382    .text.HAL_HCD_PortDisabled_Callback:00000000 HAL_HCD_PortDisabled_Callback
-     /tmp/ccKqjxPc.s:407    .text.USBH_LL_Init:00000000 $t
-     /tmp/ccKqjxPc.s:413    .text.USBH_LL_Init:00000000 USBH_LL_Init
-     /tmp/ccKqjxPc.s:502    .text.USBH_LL_Init:00000050 $d
-     /tmp/ccKqjxPc.s:1192   .bss.hhcd_USB_OTG_FS:00000000 hhcd_USB_OTG_FS
-     /tmp/ccKqjxPc.s:507    .text.USBH_LL_GetSpeed:00000000 $t
-     /tmp/ccKqjxPc.s:513    .text.USBH_LL_GetSpeed:00000000 USBH_LL_GetSpeed
-     /tmp/ccKqjxPc.s:560    .text.USBH_LL_GetLastXferSize:00000000 $t
-     /tmp/ccKqjxPc.s:566    .text.USBH_LL_GetLastXferSize:00000000 USBH_LL_GetLastXferSize
-     /tmp/ccKqjxPc.s:592    .text.USBH_LL_ClosePipe:00000000 $t
-     /tmp/ccKqjxPc.s:598    .text.USBH_LL_ClosePipe:00000000 USBH_LL_ClosePipe
-     /tmp/ccKqjxPc.s:618    .text.USBH_LL_ActivatePipe:00000000 $t
-     /tmp/ccKqjxPc.s:624    .text.USBH_LL_ActivatePipe:00000000 USBH_LL_ActivatePipe
-     /tmp/ccKqjxPc.s:644    .text.USBH_LL_GetURBState:00000000 $t
-     /tmp/ccKqjxPc.s:650    .text.USBH_LL_GetURBState:00000000 USBH_LL_GetURBState
-     /tmp/ccKqjxPc.s:676    .text.USBH_LL_DriverVBUS:00000000 $t
-     /tmp/ccKqjxPc.s:682    .text.USBH_LL_DriverVBUS:00000000 USBH_LL_DriverVBUS
-     /tmp/ccKqjxPc.s:725    .text.USBH_LL_SetToggle:00000000 $t
-     /tmp/ccKqjxPc.s:731    .text.USBH_LL_SetToggle:00000000 USBH_LL_SetToggle
-     /tmp/ccKqjxPc.s:786    .text.USBH_LL_GetToggle:00000000 $t
-     /tmp/ccKqjxPc.s:792    .text.USBH_LL_GetToggle:00000000 USBH_LL_GetToggle
-     /tmp/ccKqjxPc.s:844    .text.USBH_Delay:00000000 $t
-     /tmp/ccKqjxPc.s:850    .text.USBH_Delay:00000000 USBH_Delay
-     /tmp/ccKqjxPc.s:872    .text.USBH_Get_USB_Status:00000000 $t
-     /tmp/ccKqjxPc.s:878    .text.USBH_Get_USB_Status:00000000 USBH_Get_USB_Status
-     /tmp/ccKqjxPc.s:892    .text.USBH_Get_USB_Status:00000008 $d
-     /tmp/ccKqjxPc.s:918    .text.USBH_LL_DeInit:00000000 $t
-     /tmp/ccKqjxPc.s:924    .text.USBH_LL_DeInit:00000000 USBH_LL_DeInit
-     /tmp/ccKqjxPc.s:958    .text.USBH_LL_Start:00000000 $t
-     /tmp/ccKqjxPc.s:964    .text.USBH_LL_Start:00000000 USBH_LL_Start
-     /tmp/ccKqjxPc.s:998    .text.USBH_LL_Stop:00000000 $t
-     /tmp/ccKqjxPc.s:1004   .text.USBH_LL_Stop:00000000 USBH_LL_Stop
-     /tmp/ccKqjxPc.s:1038   .text.USBH_LL_ResetPort:00000000 $t
-     /tmp/ccKqjxPc.s:1044   .text.USBH_LL_ResetPort:00000000 USBH_LL_ResetPort
-     /tmp/ccKqjxPc.s:1078   .text.USBH_LL_OpenPipe:00000000 $t
-     /tmp/ccKqjxPc.s:1084   .text.USBH_LL_OpenPipe:00000000 USBH_LL_OpenPipe
-     /tmp/ccKqjxPc.s:1132   .text.USBH_LL_SubmitURB:00000000 $t
-     /tmp/ccKqjxPc.s:1138   .text.USBH_LL_SubmitURB:00000000 USBH_LL_SubmitURB
-ARM GAS  /tmp/ccKqjxPc.s 			page 35
+     /tmp/cc3mQcrT.s:21     .text.HAL_HCD_MspInit:00000000 $t
+     /tmp/cc3mQcrT.s:27     .text.HAL_HCD_MspInit:00000000 HAL_HCD_MspInit
+     /tmp/cc3mQcrT.s:168    .text.HAL_HCD_MspInit:00000090 $d
+     /tmp/cc3mQcrT.s:174    .text.HAL_HCD_MspDeInit:00000000 $t
+     /tmp/cc3mQcrT.s:180    .text.HAL_HCD_MspDeInit:00000000 HAL_HCD_MspDeInit
+     /tmp/cc3mQcrT.s:226    .text.HAL_HCD_MspDeInit:00000028 $d
+     /tmp/cc3mQcrT.s:232    .text.HAL_HCD_SOF_Callback:00000000 $t
+     /tmp/cc3mQcrT.s:238    .text.HAL_HCD_SOF_Callback:00000000 HAL_HCD_SOF_Callback
+     /tmp/cc3mQcrT.s:263    .text.HAL_HCD_Connect_Callback:00000000 $t
+     /tmp/cc3mQcrT.s:269    .text.HAL_HCD_Connect_Callback:00000000 HAL_HCD_Connect_Callback
+     /tmp/cc3mQcrT.s:294    .text.HAL_HCD_Disconnect_Callback:00000000 $t
+     /tmp/cc3mQcrT.s:300    .text.HAL_HCD_Disconnect_Callback:00000000 HAL_HCD_Disconnect_Callback
+     /tmp/cc3mQcrT.s:325    .text.HAL_HCD_HC_NotifyURBChange_Callback:00000000 $t
+     /tmp/cc3mQcrT.s:331    .text.HAL_HCD_HC_NotifyURBChange_Callback:00000000 HAL_HCD_HC_NotifyURBChange_Callback
+     /tmp/cc3mQcrT.s:345    .text.HAL_HCD_PortEnabled_Callback:00000000 $t
+     /tmp/cc3mQcrT.s:351    .text.HAL_HCD_PortEnabled_Callback:00000000 HAL_HCD_PortEnabled_Callback
+     /tmp/cc3mQcrT.s:376    .text.HAL_HCD_PortDisabled_Callback:00000000 $t
+     /tmp/cc3mQcrT.s:382    .text.HAL_HCD_PortDisabled_Callback:00000000 HAL_HCD_PortDisabled_Callback
+     /tmp/cc3mQcrT.s:407    .text.USBH_LL_Init:00000000 $t
+     /tmp/cc3mQcrT.s:413    .text.USBH_LL_Init:00000000 USBH_LL_Init
+     /tmp/cc3mQcrT.s:502    .text.USBH_LL_Init:00000050 $d
+     /tmp/cc3mQcrT.s:1192   .bss.hhcd_USB_OTG_FS:00000000 hhcd_USB_OTG_FS
+     /tmp/cc3mQcrT.s:507    .text.USBH_LL_GetSpeed:00000000 $t
+     /tmp/cc3mQcrT.s:513    .text.USBH_LL_GetSpeed:00000000 USBH_LL_GetSpeed
+     /tmp/cc3mQcrT.s:560    .text.USBH_LL_GetLastXferSize:00000000 $t
+     /tmp/cc3mQcrT.s:566    .text.USBH_LL_GetLastXferSize:00000000 USBH_LL_GetLastXferSize
+     /tmp/cc3mQcrT.s:592    .text.USBH_LL_ClosePipe:00000000 $t
+     /tmp/cc3mQcrT.s:598    .text.USBH_LL_ClosePipe:00000000 USBH_LL_ClosePipe
+     /tmp/cc3mQcrT.s:618    .text.USBH_LL_ActivatePipe:00000000 $t
+     /tmp/cc3mQcrT.s:624    .text.USBH_LL_ActivatePipe:00000000 USBH_LL_ActivatePipe
+     /tmp/cc3mQcrT.s:644    .text.USBH_LL_GetURBState:00000000 $t
+     /tmp/cc3mQcrT.s:650    .text.USBH_LL_GetURBState:00000000 USBH_LL_GetURBState
+     /tmp/cc3mQcrT.s:676    .text.USBH_LL_DriverVBUS:00000000 $t
+     /tmp/cc3mQcrT.s:682    .text.USBH_LL_DriverVBUS:00000000 USBH_LL_DriverVBUS
+     /tmp/cc3mQcrT.s:725    .text.USBH_LL_SetToggle:00000000 $t
+     /tmp/cc3mQcrT.s:731    .text.USBH_LL_SetToggle:00000000 USBH_LL_SetToggle
+     /tmp/cc3mQcrT.s:786    .text.USBH_LL_GetToggle:00000000 $t
+     /tmp/cc3mQcrT.s:792    .text.USBH_LL_GetToggle:00000000 USBH_LL_GetToggle
+     /tmp/cc3mQcrT.s:844    .text.USBH_Delay:00000000 $t
+     /tmp/cc3mQcrT.s:850    .text.USBH_Delay:00000000 USBH_Delay
+     /tmp/cc3mQcrT.s:872    .text.USBH_Get_USB_Status:00000000 $t
+     /tmp/cc3mQcrT.s:878    .text.USBH_Get_USB_Status:00000000 USBH_Get_USB_Status
+     /tmp/cc3mQcrT.s:892    .text.USBH_Get_USB_Status:00000008 $d
+     /tmp/cc3mQcrT.s:918    .text.USBH_LL_DeInit:00000000 $t
+     /tmp/cc3mQcrT.s:924    .text.USBH_LL_DeInit:00000000 USBH_LL_DeInit
+     /tmp/cc3mQcrT.s:958    .text.USBH_LL_Start:00000000 $t
+     /tmp/cc3mQcrT.s:964    .text.USBH_LL_Start:00000000 USBH_LL_Start
+     /tmp/cc3mQcrT.s:998    .text.USBH_LL_Stop:00000000 $t
+     /tmp/cc3mQcrT.s:1004   .text.USBH_LL_Stop:00000000 USBH_LL_Stop
+     /tmp/cc3mQcrT.s:1038   .text.USBH_LL_ResetPort:00000000 $t
+     /tmp/cc3mQcrT.s:1044   .text.USBH_LL_ResetPort:00000000 USBH_LL_ResetPort
+     /tmp/cc3mQcrT.s:1078   .text.USBH_LL_OpenPipe:00000000 $t
+     /tmp/cc3mQcrT.s:1084   .text.USBH_LL_OpenPipe:00000000 USBH_LL_OpenPipe
+     /tmp/cc3mQcrT.s:1132   .text.USBH_LL_SubmitURB:00000000 $t
+     /tmp/cc3mQcrT.s:1138   .text.USBH_LL_SubmitURB:00000000 USBH_LL_SubmitURB
+ARM GAS  /tmp/cc3mQcrT.s 			page 35
 
 
-     /tmp/ccKqjxPc.s:1189   .bss.hhcd_USB_OTG_FS:00000000 $d
-     /tmp/ccKqjxPc.s:895    .text.USBH_Get_USB_Status:0000000b $d
-     /tmp/ccKqjxPc.s:895    .text.USBH_Get_USB_Status:0000000c $t
+     /tmp/cc3mQcrT.s:1189   .bss.hhcd_USB_OTG_FS:00000000 $d
+     /tmp/cc3mQcrT.s:895    .text.USBH_Get_USB_Status:0000000b $d
+     /tmp/cc3mQcrT.s:895    .text.USBH_Get_USB_Status:0000000c $t
 
 UNDEFINED SYMBOLS
 HAL_GPIO_Init

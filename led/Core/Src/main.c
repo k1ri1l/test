@@ -22,9 +22,9 @@
 #include "i2c.h"
 #include "i2s.h"
 #include "tim.h"
-#include "usart.h"//Подключение юарта
+#include "usart.h"
 #include "usb_host.h"
-#include "gpio.h"//подключение gpio
+#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -107,8 +107,9 @@ int main(void)
   MX_USB_HOST_Init();
   MX_TIM3_Init();
   MX_ADC1_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
- 
+ HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -119,8 +120,11 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
-   HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
-HAL_Delay(500);
+    
+   for(int i = 0; i <= 500; i++){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+    HAL_Delay(20);
+   }
   }
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
