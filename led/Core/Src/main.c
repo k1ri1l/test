@@ -108,8 +108,7 @@ int main(void)
   MX_TIM3_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-  RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
-  GPIOD->MODER |= (1U << (12 * 2));
+ 
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -120,8 +119,8 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
-    GPIOD->ODR ^= (1U << 12);
-    HAL_Delay(500);
+   HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12);
+HAL_Delay(500);
   }
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
