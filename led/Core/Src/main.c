@@ -110,6 +110,9 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
+ HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
+ HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
+ HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -127,6 +130,27 @@ int main(void)
    }
    for(i = 500; i >= 0; i--){
     __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
+    HAL_Delay(3);
+   }for(i = 0; i <= 500; i++){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, i);
+    HAL_Delay(3);
+   }
+   for(i = 500; i >= 0; i--){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, i);
+    HAL_Delay(3);
+   }for(i = 0; i <= 500; i++){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, i);
+    HAL_Delay(3);
+   }
+   for(i = 500; i >= 0; i--){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, i);
+    HAL_Delay(3);
+   }for(i = 0; i <= 500; i++){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, i);
+    HAL_Delay(3);
+   }
+   for(i = 500; i >= 0; i--){
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, i);
     HAL_Delay(3);
    }
   }
