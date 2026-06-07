@@ -108,31 +108,20 @@ int main(void)
   MX_TIM3_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-  ssd1306_Init();
-  HAL_ADC_Start(&hadc1);
-
+  RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
+  GPIOD->MODER |= (1U << (12 * 2));
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_ADC_Start(&hadc1);
-  HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
-uint32_t val = HAL_ADC_GetValue(&hadc1);
-HAL_ADC_Stop(&hadc1);
+    /* USER CODE END WHILE */
+    MX_USB_HOST_Process();
 
-char buf[20];
-sprintf(buf, "Light: %lu", val);
-
-ssd1306_Fill(Black);
-ssd1306_SetCursor(0, 10);
-ssd1306_WriteString(buf, Font_7x10, White);
-ssd1306_UpdateScreen();
-
-HAL_Delay(200);
-MX_USB_HOST_Process();
+    /* USER CODE BEGIN 3 */
+    GPIOD->ODR ^= (1U << 12);
+    HAL_Delay(500);
   }
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
