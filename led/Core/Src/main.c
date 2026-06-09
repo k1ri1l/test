@@ -18,7 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "adc.h"
 #include "i2c.h"
 #include "i2s.h"
 #include "tim.h"
@@ -106,16 +105,10 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USB_HOST_Init();
   MX_TIM3_Init();
-  MX_ADC1_Init();
-  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
- HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
- HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
- HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
- HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
+ 
   /* USER CODE END 2 */
-int i;
-    int but = 1;
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -126,69 +119,32 @@ int i;
     /* USER CODE BEGIN 3 */
     
    
-    if(but > 4){
-      but = 1;
-    }
-   if(but == 1){
-    for(i = 0; i <= 500; i++){
-if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
-      but++;
-      HAL_Delay(300);
-      break;
-    }
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
-    HAL_Delay(3);
-   }
-   for(i = 500; i >= 0; i--){
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, i);
-    HAL_Delay(3);
-   }
-   }
-   else if(but == 2){
-   for(i = 0; i <= 500; i++){
-    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
-      but++;
-      HAL_Delay(300);
-      break;
-    }
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, i);
-    HAL_Delay(3);
-   }
-   for(i = 500; i >= 0; i--){
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, i);
-    HAL_Delay(3);
-   }
-  }
-  else if(but == 3){
-   for(i = 0; i <= 500; i++){
-    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
-      but++;
-      HAL_Delay(300);
-      break;
-    }
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, i);
-    HAL_Delay(3);
-   }
-   for(i = 500; i >= 0; i--){
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, i);
-    HAL_Delay(3);
-   }
-  }
-  else if(but == 4){
-   for(i = 0; i <= 500; i++){
-    if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == GPIO_PIN_RESET){
-      but++;
-      HAL_Delay(300);
-      break;
-    }
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, i);
-    HAL_Delay(3);
-   }
-   for(i = 500; i >= 0; i--){
-    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, i);
-    HAL_Delay(3);
-   }
-  }
+    uint8_t byte;
+HAL_UART_Receive(&huart2, &byte, 1, HAL_MAX_DELAY);
+
+switch(byte)
+{
+    case '1':
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
+        HAL_Delay(500);
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+        break;
+    case '2':
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+        HAL_Delay(500);
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+        break;
+    case '3':
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+        HAL_Delay(500);
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_RESET);
+        break;
+    case '4':
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_SET);
+        HAL_Delay(500);
+        HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+        break;
+}
   }
     /* USER CODE END WHILE */
     MX_USB_HOST_Process();
